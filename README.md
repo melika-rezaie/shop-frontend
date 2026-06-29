@@ -26,8 +26,8 @@ Modern e-commerce frontend built with React, Tailwind CSS, and Vite.
 - Vite
 
 Backend Repository
-[https://github.com/melika-rezaie/shop-backend
-](https://github.com/melika-rezaie/shop-backend/tree/main)
+[Shop-backend
+](https://github.com/melika-rezaie/shop-backend)
 
 License
 MIT
