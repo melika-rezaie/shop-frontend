@@ -1,16 +1,71 @@
-# React + Vite
+# Shop Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Modern e-commerce frontend built with React, Tailwind CSS, and Vite.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- User Authentication (Login, Register)
+- Product listing with search
+- Shopping Cart with Context API
+- Order placement
+- Order history
+- Admin Panel:
+  - Dashboard with stats
+  - Product management (CRUD)
+  - Order management
+  - User management (roles & delete)
+- Responsive design with Tailwind CSS
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 18
+- React Router DOM 6
+- Tailwind CSS 3
+- Context API (Cart & Auth)
+- Axios
+- Vite
 
-## Expanding the ESLint configuration
+Backend Repository
+[https://github.com/melika-rezaie/shop-backend
+](https://github.com/melika-rezaie/shop-backend/tree/main)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+License
+MIT
+
+## Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/melika-rezaie/shop-frontend.git
+cd shop-frontend
+
+# Install dependencies
+npm install
+
+# Create environment file
+cp .env.example .env
+
+# Add API URL to .env
+VITE_API_URL=http://localhost:8000/api
+
+# Start development server
+npm run dev
+Environment Variables
+Variable	Description
+VITE_API_URL	Backend API URL (e.g., http://localhost:8000/api)
+Project Structure
+text
+src/
+├── api/           # Axios API calls
+├── components/    # Reusable components (Navbar)
+├── context/       # Auth & Cart Context
+├── pages/
+│   ├── admin/     # Admin pages (Dashboard, Products, Orders, Users)
+│   ├── Products.jsx
+│   ├── Cart.jsx
+│   ├── Checkout.jsx
+│   ├── Orders.jsx
+│   ├── Login.jsx
+│   └── Register.jsx
+├── App.jsx
+└── main.jsx
